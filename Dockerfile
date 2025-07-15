@@ -9,6 +9,8 @@ COPY . .
 # Install Quartz CLI globally
 RUN npm install -g quartz
 
+RUN npm i
+
 # Build the site to /app/html
 RUN npx quartz build -o "./html"
 
