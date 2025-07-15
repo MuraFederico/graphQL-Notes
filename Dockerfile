@@ -10,7 +10,7 @@ COPY . .
 RUN npm install -g quartz
 
 # Build the site to /app/html
-RUN quartz build -o ./html
+RUN npx quartz build -o ./html
 
 # Stage 2: Serve with nginx
 FROM nginx:alpine
